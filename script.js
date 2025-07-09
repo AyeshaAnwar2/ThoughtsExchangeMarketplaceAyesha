@@ -1,67 +1,86 @@
 // ==== All Ideas (10 per category) ====
 const ideas = [
   // Meme Ideas
-  {
-    id: 1, category: 'meme', name: 'Relatable Student Life',
-    keyword: 'students, exams',
-    short: 'A meme showing expectations vs reality during exams.',
-    long: 'This meme idea shows a funny comparison between how students plan to study at the start of the semester versus the panic and all-nighter rush during exam week.'
-  },
-  {
-    id: 2, category: 'meme', name: 'WiFi Struggle',
-    keyword: 'internet, lag',
-    short: 'Meme about WiFi disconnecting at the worst moment.',
-    long: 'A meme showing how WiFi always disconnects at the most crucial moment, like while submitting an assignment or playing an online game.'
-  },
-  // ... Add 8 more meme ideas below
-  {
-    id: 3, category: 'meme', name: 'Group Project Leaders',
-    keyword: 'group work',
-    short: 'A funny take on who actually works in group projects.',
-    long: 'This meme shows one person doing all the work while others chill or disappear, with humorous captions like "The chosen one".'
-  },
-  {
-    id: 4, category: 'meme', name: 'Loading Screen Drama',
-    keyword: 'gaming, loading',
-    short: 'Overdramatic reactions to loading screens.',
-    long: 'A meme where someone acts like a hero is going to war when a game says "loading", mocking the overreactions we all have.'
-  },
-  {
-    id: 5, category: 'meme', name: 'Battery at 1%',
-    keyword: 'phone, panic',
-    short: 'Funny panic when phone hits 1% battery.',
-    long: 'A meme showing a person acting like it’s the end of the world when the phone shows 1% battery — even though a charger is nearby.'
-  },
-  {
-    id: 6, category: 'meme', name: 'Online Class Faces',
-    keyword: 'Zoom, online class',
-    short: 'Awkward Zoom faces captured during class.',
-    long: 'Screenshots or drawings of students with hilarious expressions during online classes, with captions like “When teacher asks you a question unexpectedly”.'
-  },
-  {
-    id: 7, category: 'meme', name: 'Food Delivery Wait',
-    keyword: 'hunger, foodpanda',
-    short: 'When tracking food every 30 seconds.',
-    long: 'A meme about how we keep opening the app every second to check where our food is, like it’ll magically appear faster.'
-  },
-  {
-    id: 8, category: 'meme', name: 'Too Many Tabs',
-    keyword: 'multitask, browser',
-    short: 'Browser with 99+ tabs open.',
-    long: 'A screenshot of someone’s browser with 50+ tabs and a caption like "This is what chaos looks like."'
-  },
-  {
-    id: 9, category: 'meme', name: 'When Parents Use Tech',
-    keyword: 'parents, tech fail',
-    short: 'Funny fails when parents use smartphones.',
-    long: 'A meme showing someone’s mom trying to use voice note as text or calling via WhatsApp while talking on another call.'
-  },
-  {
-    id: 10, category: 'meme', name: 'Zoom Background Fail',
-    keyword: 'class, funny',
-    short: 'Funny backgrounds during online calls.',
-    long: 'Meme where students forget to turn off weird or personal backgrounds before joining a serious Zoom meeting.'
-  },
+{
+  id: 1,
+  category: 'meme',
+  name: 'When You Say "I’ll Just Rest My Eyes"',
+  keyword: 'sleep, procrastination',
+  short: 'That nap turns into tomorrow.',
+  long: 'A super relatable meme where you lie down for “5 minutes” after studying or working and wake up 4 hours later wondering what year it is. Perfect for showing a before-and-after format: first panel is “I’ll just rest my eyes,” second panel is darkness with “2:37 AM.” It highlights how small breaks can become sleep marathons. Great for student or freelancer humor.'
+},
+{
+  id: 2,
+  category: 'meme',
+  name: 'WiFi Signal: Strong, Internet: Dead',
+  keyword: 'wifi, rage, tech',
+  short: 'WiFi is there but still nothing loads.',
+  long: 'The classic frustration — WiFi shows full bars, but nothing opens. A perfect meme moment for showing rage and helplessness. You can use the “Distracted Boyfriend” format where the guy is ignoring "Strong WiFi" and running after "No Internet". Or a "Drake format" meme with: "WiFi connected ✅" = 😐 and "Internet not working ❌" = 😡. Everyone in Pakistan or hostel life can relate hard.'
+},
+{
+  id: 3,
+  category: 'meme',
+  name: 'Online Class Be Like: Can You Hear Me?',
+  keyword: 'zoom, online class',
+  short: 'Mic off. Camera off. Soul off.',
+  long: 'A meme about Zoom/online classes — the teacher asking “Can you hear me?” repeatedly while students pretend their mic is broken. Include the famous “connection lost” excuse or "I was kicked out" lie. The meme shows the struggle of online learning — buffering faces, frozen screens, and those awkward silences. Use real screenshots or comic illustration style.'
+},
+{
+  id: 4,
+  category: 'meme',
+  name: 'Browser With 30 Tabs Open: Still Need One More',
+  keyword: 'multitasking, dev life',
+  short: 'We all open tabs we’ll never read.',
+  long: 'This meme mocks how we open 20+ tabs while researching or coding but only use 2. Perfect for developer/student life. You can show a computer crying under tab pressure or someone trying to find “that one tab” with panic. Add a caption like: "Chrome using 89% RAM just to hold my anxiety." Highly relatable for productivity memes.'
+},
+{
+  id: 5,
+  category: 'meme',
+  name: 'Coding: 1% Writing Code, 99% Fixing Bugs',
+  keyword: 'coding, bugs, struggle',
+  short: 'Debugging is a full-time job.',
+  long: 'A hilarious developer meme showing how most time is not spent writing code — it’s spent *begging the code to work*. Example: Picture of a developer confidently typing vs the next slide, Googling "why array is undefined in JS." Add a facepalm meme or the “This is fine” dog sitting in fire. Everyone who’s touched code will feel this.'
+},
+{
+  id: 6,
+  category: 'meme',
+  name: 'Low Battery = Maximum Productivity',
+  keyword: 'phone, battery, motivation',
+  short: 'Only 1% battery and suddenly you’re Elon Musk.',
+  long: 'A fun meme where your phone is dying, and suddenly you remember every task you’ve ignored. Youre copying notes, replying to DMs, uploading files, and making plans — all in 45 seconds before it shuts down. Format idea: “1% battery left: Becomes most efficient version of self.” It’s dramatic and relatable!'
+},
+{
+  id: 7,
+  category: 'meme',
+  name: 'When Mom Says "Pause Your Online Game"',
+  keyword: 'gaming, desi mom',
+  short: 'You can’t pause online 😭',
+  long: 'Gamers know this pain: You’re playing an intense online match, and mom shouts “Pause it and come eat!” This meme captures the frustration when non-gamers don’t get that online games can’t pause. Use that screaming cat meme or “angry Pikachu” style. A perfect desi twist is adding subtitles like: “Mujhe kya matlab online hai ya offline. Khana thanda ho raha hai.”'
+},
+{
+  id: 8,
+  category: 'meme',
+  name: 'When Your Code Works But You Don’t Know Why',
+  keyword: 'code, lucky bug fix',
+  short: 'Don’t touch it. Just run.',
+  long: 'This is for every developer who fixed a bug by accident. One moment the code gives 100 errors, the next it works magically — and you’re too scared to change anything. Use the “confused Mr. Bean” or “cat staring at screen” meme. Caption: "It works… and I’m not touching anything ever again."'
+},
+{
+  id: 9,
+  category: 'meme',
+  name: 'Group Projects: One Person Doing Everything',
+  keyword: 'group work, uni life',
+  short: 'Group project? More like solo mission.',
+  long: 'Every student has experienced this — the group project where only one person does all the work while others disappear. Make a meme with "Team photo:" and show one person crying with laptop while others party. Add text like: “Contribution: Me - 99%, Others - Emotional support.” Super relatable for college/university life.'
+},
+{
+  id: 10,
+  category: 'meme',
+  name: 'Trying to Eat Quietly in Online Class',
+  keyword: 'online class, eating',
+  short: 'Mic off. Crunch level: earthquake.',
+  long: 'This meme shows the awkward moment when you try to eat something during a Zoom class and your mic turns on. Suddenly the entire class hears chips crunching louder than the teacher. Use a “zoom mic sensitivity 1000%” joke or “me chewing in online class: CRUNCH CRUNCH.” Perfect for relatable student humor.'
+},
 
   // Tech Ideas
  {
@@ -145,6 +164,8 @@ const ideas = [
   long: 'Most beginners use websites daily but don’t know how they load. This idea explains how a browser converts a URL into a website by sending a request to a server, using DNS, receiving HTML, CSS, and JavaScript files, and finally rendering them on the screen. It also explains the difference between frontend and backend, what databases do, and how developers build and deploy websites. This gives a great overview for complete beginners.'
 },
 
+
+// youtube
 {
   id: 21,
   category: 'youtube',
@@ -226,6 +247,7 @@ const ideas = [
   long: 'Create a challenge-style video where you build a mini web app (like a weather app or calculator) in under 30 minutes and host it live on GitHub Pages or Netlify. Add timers, steps, and fun narration to keep it entertaining and helpful.'
 },
 
+// funny
 {
   id: 31,
   category: 'funny',
@@ -306,7 +328,7 @@ const ideas = [
   short: 'The rishtay wali aunties are ready.',
   long: 'A comedy idea where you show different types of people at a cousin’s wedding: the food hunter, the photo obsessed, the rishta hunter aunty, the dance squad, and the bored kids on phones. Add some over-the-top wedding music and desi dialogues to make it funny and real.'
 }
-  // ...Add 8 more tech, 10 YouTube, 10 funny below (you can expand these similarly)
+  
 ];
 
 // ==== Render Function ====
