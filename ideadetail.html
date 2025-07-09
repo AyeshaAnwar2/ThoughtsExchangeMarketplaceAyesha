@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idea Details</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@4.0.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50 min-h-screen flex items-center justify-center px-4">
+    <div class="max-w-2xl bg-white p-8 rounded-xl shadow-lg w-full">
+      <button onclick="goBack()" class="mb-4 text-blue-600 hover:underline">
+        &larr; Back to Ideas
+      </button>
+      <h1 id="ideaName" class="text-3xl font-bold mb-2 text-gray-800"></h1>
+      <p id="ideaKeyword" class="text-sm text-gray-500 italic mb-4"></p>
+      <p id="ideaDescription" class="text-lg text-gray-700 leading-relaxed"></p>
+    </div>
+
+    <script src="detail.js"></script>
+  </body>
+</html>

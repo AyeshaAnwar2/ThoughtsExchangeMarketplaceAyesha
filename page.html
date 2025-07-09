@@ -3,59 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Idea Search Page</title>
-    <link href="src/output.css" rel="stylesheet" />
+    <title>Idea Explorer</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@4.0.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-gray-100 p-6">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-3xl font-bold text-center mb-6">
-        💡 Explore Creative Ideas
-      </h1>
+  <body class="bg-gray-100 min-h-screen text-gray-800">
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold text-center mb-6">💡 Idea Explorer</h1>
 
-      <!-- Search bar -->
-      <input
-        id="searchInput"
-        type="text"
-        placeholder="Search ideas..."
-        class="w-full p-3 rounded-xl border border-gray-300 mb-4 shadow"
-      />
-
-      <!-- Filter buttons -->
-      <div class="flex flex-wrap gap-4 justify-center mb-6">
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-2 mb-6">
         <button
-          class="filter-btn bg-blue-500 text-white px-4 py-2 rounded-full"
-          data-category="all"
+          onclick="filterIdeas('all')"
+          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
         >
           All
         </button>
         <button
-          class="filter-btn bg-purple-500 text-white px-4 py-2 rounded-full"
-          data-category="meme"
+          onclick="filterIdeas('meme')"
+          class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
         >
-          Meems
+          Meme
         </button>
         <button
-          class="filter-btn bg-green-500 text-white px-4 py-2 rounded-full"
-          data-category="tech"
+          onclick="filterIdeas('tech')"
+          class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
         >
           Tech
         </button>
         <button
-          class="filter-btn bg-yellow-500 text-white px-4 py-2 rounded-full"
-          data-category="funny"
-        >
-          Funny
-        </button>
-        <button
-          class="filter-btn bg-red-500 text-white px-4 py-2 rounded-full"
-          data-category="youtube"
+          onclick="filterIdeas('youtube')"
+          class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
         >
           YouTube
         </button>
+        <button
+          onclick="filterIdeas('funny')"
+          class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700"
+        >
+          Funny
+        </button>
       </div>
 
-      <!-- Ideas container -->
-      <div id="ideasContainer" class="grid gap-6 md:grid-cols-2"></div>
+      <!-- Search Bar -->
+      <div class="flex justify-center mb-6">
+        <input
+          type="text"
+          id="searchInput"
+          oninput="searchIdeas()"
+          placeholder="Search ideas..."
+          class="w-full max-w-md px-4 py-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+        />
+      </div>
+
+      <!-- Ideas Container -->
+      <div
+        id="ideasContainer"
+        class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <!-- Cards inserted via JS -->
+      </div>
     </div>
 
     <script src="script.js"></script>
