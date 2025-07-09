@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Idea Description Page</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idea Search Page</title>
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-6">
+        💡 Explore Creative Ideas
+      </h1>
 
-</body>
+      <!-- Search bar -->
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search ideas..."
+        class="w-full p-3 rounded-xl border border-gray-300 mb-4 shadow"
+      />
+
+      <!-- Filter buttons -->
+      <div class="flex flex-wrap gap-4 justify-center mb-6">
+        <button
+          class="filter-btn bg-blue-500 text-white px-4 py-2 rounded-full"
+          data-category="all"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn bg-purple-500 text-white px-4 py-2 rounded-full"
+          data-category="meme"
+        >
+          Meems
+        </button>
+        <button
+          class="filter-btn bg-green-500 text-white px-4 py-2 rounded-full"
+          data-category="tech"
+        >
+          Tech
+        </button>
+        <button
+          class="filter-btn bg-yellow-500 text-white px-4 py-2 rounded-full"
+          data-category="funny"
+        >
+          Funny
+        </button>
+        <button
+          class="filter-btn bg-red-500 text-white px-4 py-2 rounded-full"
+          data-category="youtube"
+        >
+          YouTube
+        </button>
+      </div>
+
+      <!-- Ideas container -->
+      <div id="ideasContainer" class="grid gap-6 md:grid-cols-2"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
