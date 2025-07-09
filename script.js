@@ -7,6 +7,12 @@ const ideas = [
     description: "Post 5 memes every morning that reflect trending topics.",
     category: "meme"
   },
+   {
+    name: "Daily Meme Pack",
+    keyword: "#funny, #trending",
+    description: "Post 5 memes every morning that reflect trending topics.",
+    category: "meme"
+  },
   {
     name: "Tech Tuesday",
     keyword: "#gadgets, #AI",
@@ -54,7 +60,7 @@ function displayIdeas(filteredIdeas) {
 
     card.innerHTML = `
       <h2 class="text-xl font-bold mb-2">${idea.name}</h2>
-      <p class="text-sm text-gray-600 mb-1"><strong>Keywords:</strong> ${idea.keyword}</p>
+      <p class="text-sm bg-gray-200 text-gray-600 pl-2 mb-1"><strong></strong> ${idea.keyword}</p>
       <p class="text-gray-700">${idea.description}</p>
     `;
 
